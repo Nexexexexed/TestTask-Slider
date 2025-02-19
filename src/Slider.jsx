@@ -54,11 +54,11 @@ const Slider = () => {
 
 
     return (
-        <div className="slider-container" onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
-            <div className="slider">
-                <div className="slider-track" style={{ transform: `translateX(-${currentIndex * 100}vw)` }}>
+        <div className='slider-container' onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
+            <div className='slider'>
+                <div className='slider-track' style={{ transform: `translateX(-${currentIndex * 100}vw)` }}>
                     {components.map((Component, index) => (
-                    <div key={index} className="slide">
+                    <div key={index} className='slide'>
                         <Component {...(index===0? {nextSlide}: {})}   />
                     </div>
                     ))}
