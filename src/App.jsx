@@ -1,7 +1,13 @@
-import React from 'react';
+import React,{useContext} from 'react';
+import Slider from './Slider';
+
 
 function App() {
-  return <h1>Hello, React!</h1>;
+  return (
+        <div>
+            <Slider />
+        </div>
+    );
 }
 
 export default App;
