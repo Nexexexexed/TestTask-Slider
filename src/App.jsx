@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import Slider from './Slider';
 import Header from './Header/Header'
+import './styles/App.css'
 
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
         setcurrentIndex(0)
     }
   return (
-        <div>
+        <div className='app'>
             <Header returnFirstSlide={returnFirstSlide} />
             <Slider  nextSlide={nextSlide} previousSlide={previousSlide} currentIndex={currentIndex}/>
         </div>

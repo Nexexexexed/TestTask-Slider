@@ -1,3 +1,18 @@
 .navigation{
     position: absolute;
+    z-index: 1;
+}
+
+.nav_btn_head{
+    padding: 2em;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.nav_btn_head img{
+    max-width: 50%;
 }

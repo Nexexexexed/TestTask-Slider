@@ -1,26 +1,32 @@
-import React,{useState,useEffect,useRef} from 'react'
+import React,{useState,} from 'react'
+import SubSlider from '../SubSlider/SubSlider'
+import '../styles/comp3Style.css'
 
 const Component3 = () => {
   const [showModal,setshowModal]=useState(false);
 
-  const dialogRef = useRef(null);
-
-  useEffect(()=>{
-    if(showModal){
-      dialogRef.current?.showModal()
-    }
-    else{
-      dialogRef.current?.close()
-    }
-  },[showModal])
   return (
     <div>
-      Модалка
-      <button onClick={()=>{setshowModal(true)}}>+</button>
-      <dialog ref={dialogRef}>
-        Подробная инфа без слайдера
-        <button onClick={()=>{setshowModal(false)}}>Закрыть</button>
-      </dialog>
+      <div className=''>
+        <div className='spray_bubble'>
+          пузырьки и спрей
+        </div>
+        <div className='base_blocks'>
+          <div className='eat'>
+            Тарелка
+          </div>
+          <div className='calendar'>
+            Календарь
+          </div>
+          <div className='btn_modal'>
+            <button onClick={()=>{setshowModal(true)}}>+</button>
+          </div>
+        </div>
+        <div className='modal_blocks' style={{display : showModal?"block" :"none"}}  >
+          <button onClick={()=>(setshowModal(false))}>X</button>
+          <SubSlider />
+        </div>
+      </div>
     </div>
   )
 }

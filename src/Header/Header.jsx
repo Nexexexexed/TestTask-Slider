@@ -1,10 +1,11 @@
 import React from 'react'
 import './Header.css'
+import nav_image from '../image/nav.png'
 
 const Header = ({returnFirstSlide}) => {
   return (
     <nav className='navigation'>
-      <button onClick={returnFirstSlide}>Домик</button>
+      <button className="nav_btn_head" onClick={returnFirstSlide}><img src={nav_image}/></button>
     </nav>
   )
 }

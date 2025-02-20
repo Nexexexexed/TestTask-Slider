@@ -4,31 +4,37 @@
     box-sizing: border-box;
 }
 
+.first_slide_text_hello{
+  font-size: 0.75em;
+}
+
+
 .slider-container {
     position: relative;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-  }
+}
   
-  .slider {
+.slider {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-  }
+}
   
-  .slider-track {
+.slider-track {
     display: flex;
     transition: transform 0.5s ease-in-out;
     width: 300vw; 
-  }
+}
   
-  .slide {
+.slide {
     min-width: 100vw; 
     height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
-    font-size: 2rem;
-  }
+    font-size: 2.5rem;
+    padding-left: 70px;
+}
   
+
