@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react'
+import React,{useState} from 'react'
 
 import Component1 from './ComponentsSlider/Component1'
 import Component2 from './ComponentsSlider/Component2'
@@ -11,22 +11,7 @@ import './styles/sliderStyle.css'
 //массив компонентов для слайдера
 const components = [Component1,Component2,Component3]
 
-const Slider = () => {
-    // перелистывание
-    const [currentIndex,setcurrentIndex]=useState(0);
-
-    const nextSlide=()=>{
-        setcurrentIndex((previousIndex)=>{
-            return previousIndex+1
-        })
-    }
-
-    const previousSlide=()=>{
-        setcurrentIndex((previousIndex)=>{
-            return previousIndex-1
-        })
-    }
-
+const Slider = ({nextSlide,previousSlide,currentIndex}) => {
 
 
     //отслеживание координат для свайпа
