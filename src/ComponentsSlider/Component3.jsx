@@ -10,6 +10,7 @@ import pink_bubble_2 from '../image/thirth_page/pink_bubble_2.png'
 import pink_bubble_3 from '../image/thirth_page/pink_bubble_3.png'
 
 import blue_bubble from '../image/thirth_page/blue_bubble_1.png'
+import cross from '../image/thirth_page/cross.png'
 
 const Component3 = () => {
   const [showModal,setshowModal]=useState(false);
@@ -54,7 +55,9 @@ const Component3 = () => {
         </div>
       </div>
       <div className='modal_blocks' style={{display : showModal?"flex" :"none"}}  >
-          <button onClick={()=>(setshowModal(false))}>X</button>
+          <button className='close_btn' onClick={()=>(setshowModal(false))}>
+            <img className='cross_image' src={cross}></img>
+          </button>
           <SubSlider />
       </div>
     </div>

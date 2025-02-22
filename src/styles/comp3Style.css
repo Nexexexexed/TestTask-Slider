@@ -1,3 +1,5 @@
+
+
 .thirth_slide_block_container{
     position: relative;
     left: 20%;
@@ -12,13 +14,18 @@
 .key_word{
     text-transform: uppercase;
     font-size: 0.8em;
+    line-height: 1;
+    transform: translate(10px,0);
 }
 
 .brand_word{
     font-size: 2.6em;
     letter-spacing: 0.06em;
     font-weight: 200;
+    line-height: 1;
 }
+
+
 
 .base_blocks{
     display: grid;
@@ -27,15 +34,19 @@
 }
 
 .block{
+    display: flex;
     padding: 5%;
     font-size: 0.75em;
     background-color: white;
     border-radius: 1em;
     box-shadow: 0 0 0.5em 0.5em rgba(0, 0, 0, 0.025);
+    flex-direction: column;
 }
 
 .block_image{
-    width: 7.5%;
+    position: relative;
+    width: 2.5em;
+    margin-top: -1.5em;
 }
 
 .calendar{
@@ -45,8 +56,8 @@
 
 .plate{
     grid-row: span 2 / span 1;
-    padding-left: 5rem;
-    margin-left: 2em;
+    padding-left: 7rem;
+    height: 100%;
 }
 
 
@@ -295,5 +306,23 @@
     border-radius: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     display: none;
+    justify-content: center;
+    align-items: flex-end;
     flex-direction: row-reverse;
+    padding-left: 3em;
+
 }
+
+.close_btn{
+    all: unset;
+    position: relative;
+    z-index: 10;
+}
+
+.cross_image{
+    width: 50%;
+    position: relative;
+    bottom: 12em;
+    left: 2em;
+}
+
