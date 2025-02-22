@@ -66,22 +66,23 @@
 
 .sperm_second_4{
   opacity: 0;
-  width: 4%;
+  width: 12.5%;
   position: absolute;
-  top: 50%;
-  left: 63.5%;
+  top: 54%;
+  left: 63.25%;
   animation: fadeInMove 2s ease-in-out forwards;
   animation-delay: 2s;
 }
 
 .sperm_second_5{
   opacity: 0;
-  width: 4%;
+  width: 8.5%;
   position: absolute;
   top: 65%;
-  left: 63.5%;
+  left: 63.25%;
   animation: fadeInMove 2s ease-in-out forwards;
   animation-delay: 2s;
+  filter: blur(0.035em);
 }
   
 
@@ -102,7 +103,7 @@
   width: 20%;
   position: absolute;
   top: 12%;
-  left: 47%;
+  left: 46.65%;
   animation: fadeInMove 3s ease-in-out forwards;
   animation-delay: 1s;
 }

@@ -39,8 +39,8 @@ const Component2 = () => {
           </div>
         </div>    
       </div>
-      <img src={sperm_4} className="sperm_second_4"></img>
-      <img src={sperm_5} className="sperm_second_5"></img>
+      <img src={sperm_2} className="sperm_second_4"></img>
+      <img src={sperm_3} className="sperm_second_5"></img>
     </div>
   );
 }
