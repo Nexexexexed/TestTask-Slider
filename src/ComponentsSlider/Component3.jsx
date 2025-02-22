@@ -5,20 +5,35 @@ import '../styles/comp3Style.css'
 import plate from '../image/thirth_page/plate.png'
 import calendar from '../image/thirth_page/calendar.png'
 import bottle from '../image/thirth_page/bottle.png'
+import pink_bubble_1 from '../image/thirth_page/pink_bubble_1.png'
+import pink_bubble_2 from '../image/thirth_page/pink_bubble_2.png'
+import pink_bubble_3 from '../image/thirth_page/pink_bubble_3.png'
 
+import blue_bubble from '../image/thirth_page/blue_bubble_1.png'
 
 const Component3 = () => {
   const [showModal,setshowModal]=useState(false);
 
   return (
     <div className='thirth_slide_container'>
+            <div className='modal_blackout' style={{display : showModal?"block" :"none"}}></div>
       <div className='thirth_slide_bottle_container'>
-        <img className='bottle_image' src={bottle}></img>
+        <img className='bottle_image' src={bottle} style={{zIndex: showModal?"7" : ""}}></img>
+      </div>
+      <div className='bubble_container'>
+        <img className='pink_bubble_1' src={pink_bubble_1} style={{zIndex: showModal?"6" : ""}}></img>
+        <img className='pink_bubble_2' src={pink_bubble_2} style={{zIndex: showModal?"6" : ""}}></img>
+        <img className='pink_bubble_3' src={pink_bubble_3} style={{zIndex: showModal?"7" : ""}}></img>
+        <img className='blue_bubble_1' src={blue_bubble} style={{zIndex: showModal?"7" : ""}}></img>
+        <img className='blue_bubble_2' src={blue_bubble} style={{zIndex: showModal?"7" : ""}}></img>
+        <img className='blue_bubble_3' src={blue_bubble} style={{zIndex: showModal?"7" : ""}}></img>
+        <img className='blue_bubble_4' src={blue_bubble} style={{zIndex: showModal?"6" : ""}}></img>
+        <img className='blue_bubble_5' src={blue_bubble} style={{zIndex: showModal?"7" : ""}}></img>
       </div>
       <div className='thirth_slide_block_container'>
         <div className='thirth_slide_text'>
-          <p className='key_word'>Ключевое сообщение</p>
-          <p className='brand_word'>BRAND<b>XY</b></p>
+          <p className='key_word' style={{zIndex: showModal?"7" : "", position: showModal? "relative": ""}}>{showModal?"ПРЕИМУЩЕСТВА" :"Ключевое сообщение"}</p>
+          <p className='brand_word' style={{zIndex: showModal?"7" : "", position: showModal? "relative": ""}}>BRAND<b>XY</b></p>
         </div>
         <div className='base_blocks'>
           <div className='plate block'>
@@ -38,10 +53,10 @@ const Component3 = () => {
           </div>
         </div>
       </div>
-      <div className='modal_blocks' style={{display : showModal?"block" :"none"}}  >
+      <div className='modal_blocks' style={{display : showModal?"flex" :"none"}}  >
           <button onClick={()=>(setshowModal(false))}>X</button>
           <SubSlider />
-        </div>
+      </div>
     </div>
   )
 }
