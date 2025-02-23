@@ -3,15 +3,21 @@ import "./SubSlider.css";
 
 const slides = [
   [
-    { number: "01", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit" },
+    {
+      number: "01",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    },
     { number: "02", text: "Faucibus pulvinar elementum integer enim" },
-    { number: "03", text: "Faucibus pulvinar elementum integer enim" }
+    { number: "03", text: "Faucibus pulvinar elementum integer enim" },
   ],
   [
-    { number: "04", text: "Mi bibendum neque egestas congue quisque egestas diam" },
+    {
+      number: "04",
+      text: "Mi bibendum neque egestas congue quisque egestas diam",
+    },
     { number: "05", text: "Venetis lectus magna fringilla urna" },
-    { number: "06", text: "Venetis lectus magna fringilla urna" }
-  ]
+    { number: "06", text: "Venetis lectus magna fringilla urna" },
+  ],
 ];
 
 const SubSlider = () => {
@@ -36,7 +42,9 @@ const SubSlider = () => {
         ))}
       </div>
       <div className="dots_button">
-        <button className="navigation_arrow_left" onClick={prevSlide}>&lt;</button>
+        <button className="navigation_arrow_left" onClick={prevSlide}>
+          &lt;
+        </button>
         {slides.map((_, index) => (
           <span
             key={index}
@@ -44,7 +52,9 @@ const SubSlider = () => {
             onClick={() => setCurrentIndex(index)}
           />
         ))}
-        <button className="navigation_arrow_right" onClick={nextSlide}>&gt;</button>
+        <button className="navigation_arrow_right" onClick={nextSlide}>
+          &gt;
+        </button>
       </div>
     </div>
   );
